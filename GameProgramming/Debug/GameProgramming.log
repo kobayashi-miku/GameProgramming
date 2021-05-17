@@ -1,0 +1,24 @@
+﻿2021/05/14 9:39:55 にビルドを開始しました。
+     1>ノード 2 上のプロジェクト "C:\Users\kobam\Desktop\ゲームプログラミング実習(制作)\GameProgramming\GameProgramming.vcxproj" (Build ターゲット)。
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt CEnemy.cpp CPlayer.cpp CRectangle.cpp CSceneGame.cpp CSceneManager.cpp
+         CSceneManager.cpp
+         CSceneGame.cpp
+     1>c:\users\kobam\desktop\ゲームプログラミング実習(制作)\gameprogramming\crectangle.h(82): error C2663: 'CTexture::DrawImage' : 3 オーバーロードに 'this' ポインターのための必要な定義がされていません。
+     1>c:\users\kobam\desktop\ゲームプログラミング実習(制作)\gameprogramming\cscenegame.cpp(72): warning C4018: '<' : signed と unsigned の数値を比較しようとしました。
+     1>c:\users\kobam\desktop\ゲームプログラミング実習(制作)\gameprogramming\cscenegame.cpp(81): warning C4018: '<' : signed と unsigned の数値を比較しようとしました。
+     1>c:\users\kobam\desktop\ゲームプログラミング実習(制作)\gameprogramming\cscenegame.cpp(83): warning C4018: '<' : signed と unsigned の数値を比較しようとしました。
+     1>c:\users\kobam\desktop\ゲームプログラミング実習(制作)\gameprogramming\cscenegame.cpp(120): warning C4018: '<' : signed と unsigned の数値を比較しようとしました。
+     1>c:\users\kobam\desktop\ゲームプログラミング実習(制作)\gameprogramming\cscenegame.cpp(163): warning C4018: '<' : signed と unsigned の数値を比較しようとしました。
+         CRectangle.cpp
+     1>c:\users\kobam\desktop\ゲームプログラミング実習(制作)\gameprogramming\crectangle.h(82): error C2663: 'CTexture::DrawImage' : 3 オーバーロードに 'this' ポインターのための必要な定義がされていません。
+         CPlayer.cpp
+     1>c:\users\kobam\desktop\ゲームプログラミング実習(制作)\gameprogramming\crectangle.h(82): error C2663: 'CTexture::DrawImage' : 3 オーバーロードに 'this' ポインターのための必要な定義がされていません。
+         CEnemy.cpp
+     1>c:\users\kobam\desktop\ゲームプログラミング実習(制作)\gameprogramming\crectangle.h(82): error C2663: 'CTexture::DrawImage' : 3 オーバーロードに 'this' ポインターのための必要な定義がされていません。
+         コードを生成中...
+     1>プロジェクト "C:\Users\kobam\Desktop\ゲームプログラミング実習(制作)\GameProgramming\GameProgramming.vcxproj" (Build ターゲット) のビルドが終了しました -- 失敗。
+
+ビルドに失敗しました。
+
+経過時間 00:00:03.02
