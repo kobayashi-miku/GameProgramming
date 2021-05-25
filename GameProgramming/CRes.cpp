@@ -1,1 +1,0 @@
-CModelX CRes::sMoselX;
