@@ -12,6 +12,9 @@
 
 bool InitFlg = true;
 
+//シーンマネージャのインスタンス
+CSceneManager SceneManager;
+
 /* display関数
 1秒間に60回実行される
 */

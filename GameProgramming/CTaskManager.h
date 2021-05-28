@@ -2,7 +2,6 @@
 #define CTASKMANAGER_H
 //タスククラスのインクルード
 #include "CTask.h"
-#include "CScene.h"
 
 /*
 タスクマネージャ
@@ -10,20 +9,17 @@
 */
 
 class CTaskManager {
-public:
-	CScene::EScene mScene; //シーンの識別
-
-	CScene *mpScene; //シーンへのポインタ
-	//コンストラクタ
-	CSceneManager();
-	//デストラクタ（削除されるときに実行されます）
-	~CSceneManager();
-	//初期化処理
-	void Init();
-	CTask *mpHead;	//先頭ポインタ
-//	CTask *mpTail;	//最後ポインタ
+private:
+	//タスクマネージャのインスタンス
+	static CTaskManager* mpInstance;
+protected:
 	//デフォルトコンストラクタ
 	CTaskManager();
+public:
+	//インスタンスの取得
+	static CTaskManager* Get();
+	CTask mHead;//先頭タスク
+	CTask mTail;//最終タスク
 	//デストラクタ
 	virtual ~CTaskManager();
 	//リストに追加
@@ -33,16 +29,15 @@ public:
 	void Update();
 	//描画
 	void Render();
-	//22
 	//リストから削除
 	//Remove(タスクのポインタ)
 	void Remove(CTask *task);
-	//22
 	//タスクの削除
 	void Delete();
+	//衝突処理
+	void TaskCollision();
 };
-
 //タスクマネージャyの外部参照
-extern CTaskManager TaskManager;
+//extern CTaskManager TaskManager;
 
 #endif

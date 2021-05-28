@@ -20,6 +20,9 @@ public:
 	void Update();
 };
 
+<<<<<<< HEAD
 /*extern CSceneManager SceneManager;*/
 
+=======
+>>>>>>> 2446cf0dce4570c7c681d5bcb45ea81e16039bda
 #endif

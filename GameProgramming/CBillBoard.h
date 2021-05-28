@@ -22,6 +22,6 @@ public:
 	void Update();
 	//•`‰æ
 	void Render();
+	void Render(CMaterial *mpMaterial);
 };
-
 #endif

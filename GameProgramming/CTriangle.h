@@ -9,10 +9,10 @@
 */
 class CTriangle {
 public:
-	CVector mV[3]; //頂点座標
-	CVector mN[3]; //法線
 	CVector mUv[3]; //テクスチャマッピング
 	int mMaterialIdx; //マテリアル番号
+	CVector mV[3]; //頂点座標
+	CVector mN[3]; //法線
 	//頂点座標設定
 	//SetVertex(頂点1, 頂点2, 頂点3)
 	void SetVertex(const CVector &v0, const CVector &v1, const CVector &v2);
@@ -23,7 +23,7 @@ public:
 	void SetNormal(const CVector &v0, const CVector &v1, const CVector &v2);
 	//描画
 	void Render();
-	//Render(行列)
+	//描画
 	void Render(const CMatrix &m);
 };
 

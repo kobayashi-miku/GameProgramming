@@ -14,3 +14,4 @@ void CTransform::Update() {
 	//‡¬s—ñ‚Ìİ’è
 	mMatrix = mMatrixScale * mMatrixRotate * mMatrixTranslate;
 }
+

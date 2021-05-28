@@ -82,30 +82,92 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+<<<<<<< HEAD
+=======
+    <ClCompile Include="CBillBoard.cpp" />
+    <ClCompile Include="CBullet.cpp" />
+    <ClCompile Include="CCamera.cpp" />
+    <ClCompile Include="CCharacter.cpp" />
+    <ClCompile Include="CCollider.cpp" />
+    <ClCompile Include="CColliderLine.cpp" />
+    <ClCompile Include="CColliderMesh.cpp" />
+    <ClCompile Include="CColliderTriangle.cpp" />
+    <ClCompile Include="CCollisionManager.cpp" />
+    <ClCompile Include="CEffect.cpp" />
+>>>>>>> 2446cf0dce4570c7c681d5bcb45ea81e16039bda
     <ClCompile Include="CEnemy.cpp" />
+    <ClCompile Include="CEnemy2.cpp" />
     <ClCompile Include="CKey.cpp" />
+<<<<<<< HEAD
     <ClCompile Include="CPlayer.cpp" />
     <ClCompile Include="CRectangle.cpp" />
     <ClCompile Include="CSceneGame.cpp" />
     <ClCompile Include="CSceneManager.cpp" />
     <ClCompile Include="CSceneTitle.cpp" />
     <ClCompile Include="CText.cpp" />
+=======
+    <ClCompile Include="CMaterial.cpp" />
+    <ClCompile Include="CMatrix.cpp" />
+    <ClCompile Include="CModel.cpp" />
+    <ClCompile Include="CModelX.cpp" />
+    <ClCompile Include="CPlayer.cpp" />
+    <ClCompile Include="CRes.cpp" />
+    <ClCompile Include="CSceneGame.cpp" />
+    <ClCompile Include="CSceneManager.cpp" />
+    <ClCompile Include="CSound.cpp" />
+    <ClCompile Include="CTaskManager.cpp" />
+    <ClCompile Include="CText.cpp" />
+    <ClCompile Include="CTexture.cpp" />
+    <ClCompile Include="CTransform.cpp" />
+    <ClCompile Include="CTriangle.cpp" />
+    <ClCompile Include="CUtil.cpp" />
+    <ClCompile Include="CVector.cpp" />
+>>>>>>> 2446cf0dce4570c7c681d5bcb45ea81e16039bda
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Updata.cpp" />
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
+=======
+    <ClInclude Include="CBillBoard.h" />
+    <ClInclude Include="CBullet.h" />
+    <ClInclude Include="CCamera.h" />
+    <ClInclude Include="CCharacter.h" />
+    <ClInclude Include="CCollider.h" />
+    <ClInclude Include="CColliderLine.h" />
+    <ClInclude Include="CColliderMesh.h" />
+    <ClInclude Include="CColliderTriangle.h" />
+    <ClInclude Include="CCollisionManager.h" />
+    <ClInclude Include="CEffect.h" />
+>>>>>>> 2446cf0dce4570c7c681d5bcb45ea81e16039bda
     <ClInclude Include="CEnemy.h" />
+    <ClInclude Include="CEnemy2.h" />
     <ClInclude Include="CKey.h" />
+<<<<<<< HEAD
     <ClInclude Include="CMap.h" />
+=======
+    <ClInclude Include="CMaterial.h" />
+    <ClInclude Include="CMatrix.h" />
+    <ClInclude Include="CModel.h" />
+    <ClInclude Include="CModelX.h" />
+>>>>>>> 2446cf0dce4570c7c681d5bcb45ea81e16039bda
     <ClInclude Include="CPlayer.h" />
-    <ClInclude Include="CRectangle.h" />
+    <ClInclude Include="CRes.h" />
     <ClInclude Include="CScene.h" />
     <ClInclude Include="CSceneGame.h" />
     <ClInclude Include="CSceneManager.h" />
     <ClInclude Include="CSceneTitle.h" />
     <ClInclude Include="CText.h" />
     <ClInclude Include="CTexture.h" />
+<<<<<<< HEAD
     <ClInclude Include="Update.h" />
+=======
+    <ClInclude Include="CTransform.h" />
+    <ClInclude Include="CTriangle.h" />
+    <ClInclude Include="CUtil.h" />
+    <ClInclude Include="CVector.h" />
+    <ClInclude Include="main.h" />
+>>>>>>> 2446cf0dce4570c7c681d5bcb45ea81e16039bda
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

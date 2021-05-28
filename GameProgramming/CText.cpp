@@ -1,24 +1,38 @@
-#include "CText.h"
+ï»¿#include "CText.h"
 
-//static‚ÌƒeƒNƒXƒ`ƒƒ‚ÌƒCƒ“ƒXƒ^ƒ“ƒX
-CTexture CText::mFont;
 /*
 DrawChar
-•¶š‚ğ•`‰æ‚·‚é
-ch:•¶šƒf[ƒ^ x:XÀ•W y:YÀ•W w:• h:‚‚³
+æ–‡å­—ã‚’æç”»ã™ã‚‹
+ch:æ–‡å­—ãƒ‡ãƒ¼ã‚¿ x:Xåº§æ¨™ y:Yåº§æ¨™ w:å¹… h:é«˜ã•
 */
 void CText::DrawChar(char ch, int x, int y, int w, int h) {
+<<<<<<< HEAD
 	int u = ch % 16 * 16;
 	int v = (ch - ' ') / 16 * 16;
 	mFont.DrawImage(x - w, x + w, y - h, y + h, u, u + 15, v + 15, v);
+=======
+	int u = (ch - ' ') % mFont.mCol * mFont.mHeader.width / mFont.mCol;
+	int v = (ch - ' ') / mFont.mCol * mFont.mHeader.height / mFont.mRow;
+	mFont.DrawImage(x - w, x + w, y - h, y + h,
+		u, u + mFont.mHeader.width / mFont.mCol,
+		v + mFont.mHeader.height / mFont.mRow, v);
+>>>>>>> 2446cf0dce4570c7c681d5bcb45ea81e16039bda
 }
-// s:•¶š—ñƒf[ƒ^ x:æ“ª•¶š‚ÌXÀ•W y:æ“ª•¶š‚ÌYÀ•W
-void CText::DrawString(char *s, int x, int y, int w, int h) {
-	//1•¶š‚¸‚Â•`‰æ‚µ‚Ü‚·
+// s:æ–‡å­—åˆ—ãƒ‡ãƒ¼ã‚¿ x:å…ˆé ­æ–‡å­—Xåº§æ¨™ y:å…ˆé ­æ–‡å­—Yåº§æ¨™
+void CText::DrawString(const char *s, int x, int y, int w, int h) {
+	//1æ–‡å­—ãšã¤æç”»ã—ã¾ã™
 	for (int i = 0; s[i] != '\0'; i++) {
-		//•¶š‚ğ•`‰æ‚·‚é
+		//æ–‡å­—ã‚’æç”»ã™ã‚‹
 		DrawChar(s[i], x, y, w, h);
-		//‰E‚ÖˆÚ“®
+		//å³ã¸ç§»å‹•
 		x += w * 2;
 	}
 }
+//ãƒ†ã‚¯ã‚¹ãƒãƒ£ã®ãƒ­ãƒ¼ãƒ‰
+//LoadTexture(ãƒ†ã‚¯ã‚¹ãƒãƒ£ãƒ•ã‚¡ã‚¤ãƒ«å, è¡Œæ•°, åˆ—æ•°)
+void CText::LoadTexture(const char *tga, int row, int col)
+{
+	mFont.Load(tga);
+	mFont.SetRowCol(row, col);
+}
+

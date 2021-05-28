@@ -1,1 +1,2 @@
-CModelX CRes::sMoselX;
+#include "CRes.h"
+CModelX CRes::sModelX;

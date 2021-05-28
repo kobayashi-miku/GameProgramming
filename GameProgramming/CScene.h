@@ -1,26 +1,23 @@
 #ifndef CSCENE_H
 #define CSCENE_H
 
+#include "CText.h"
+
 /*
 シーンの基底クラス
 */
 class CScene {
 public:
-	//シーンの識別子
-	enum EScene {
-		EGAME,	//ゲーム
-		ETITLE, 	//タイトル
-	};
-	//次のシーン
-	EScene mScene;
+	CText mFont;
 	//virtual 仮想関数
 	//ポリモーフィズムの実装
 	//=0 純粋仮想関数の設定
 	virtual void Init() = 0;	//純粋仮想関数 初期化処理
 	virtual void Update() = 0; //純粋仮想関数 更新処理
 	//次のシーンの取得
-	virtual EScene GetNextScene() = 0;
+	//virtual EScene GetNextScene() = 0;
 	virtual ~CScene() {}	//デストラクタの定義
+<<<<<<< HEAD
 	/*
 	//2D描画スタート
 	//Start2D(左座標, 右座標, 下座標, 上座標)
@@ -30,6 +27,8 @@ public:
 	//カメラの設定
 	//Camera3D(視点X座標, 視点Y座標, 視点Z座標, 注視点X座標, 注視点Y座標, 注視点Z座標, 上方向X, 上方向Y, 上方向Z)
 	void Camera3D(float ex, float ey, float ez, float cx, float cy, float cz, float ux, float uy, float uz);*/
+=======
+>>>>>>> 2446cf0dce4570c7c681d5bcb45ea81e16039bda
 };
 
 

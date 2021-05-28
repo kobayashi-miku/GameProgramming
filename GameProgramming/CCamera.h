@@ -14,12 +14,12 @@ public:
 	CVector mUp;
 	//カメラの設定
 	//Set(視点, 注視点, 上方向)
-	void Set(const CVector &eye, const CVector &center, const CVector &up);
+	void Set(const CVector &eye, const CVector &center,
+		const CVector &up);
 	//カメラ適用
 	void Render();
 };
 
 //カメラの外部参照
 extern CCamera Camera;
-
 #endif
