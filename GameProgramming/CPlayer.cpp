@@ -2,7 +2,8 @@
 #include "CKey.h"
 
 //extern：他のソースファイルの外部変数にアクセスする宣言
-extern CTexture Texture;
+//extern CTexture Texture;
+CTexture Texture;
 
 CPlayer::CPlayer()
 : mFx(1.0f), mFy(0.0f)

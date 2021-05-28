@@ -58,8 +58,8 @@ void CSceneGame::Init() {
 	}
 
 	//テキストフォントの読み込みと設定
-	CText::mFont.Load("FontG.tga");
-	CText::mFont.SetRowCol(1, 4096 / 64);
+/*	CText::mFont.Load("FontG.tga");
+	CText::mFont.SetRowCol(1, 4096 / 64);*/
 }
 
 
@@ -126,7 +126,7 @@ void CSceneGame::Update() {
 	//2Dの投影範囲を設定
 	gluOrtho2D(-400, 400, -300, 300);
 	CText::DrawString("(-380,280)", -380, 280, 16, 16);
-
+	/*
 	//カメラのパラメータを作成する
 	CVector e, c, u;//視点、注視点、上方向
 	//視点を求める
@@ -150,7 +150,7 @@ void CSceneGame::Update() {
 	//2D描画終了
 	End2D();
 
-	return;
+	return;*/
 }
 
 //次のシーンの取得

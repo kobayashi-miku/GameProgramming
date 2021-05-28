@@ -8,6 +8,7 @@
 タスクマネージャ
 タスクリストの管理
 */
+
 class CTaskManager {
 public:
 	CScene::EScene mScene; //シーンの識別

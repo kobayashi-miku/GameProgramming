@@ -29,5 +29,20 @@ void CSceneManager::Init() {
 void CSceneManager::Update() {
 	//ポインタのUpdateを呼ぶ
 	mpScene->Update();
-
+	//次のシーンを取得し異なるか判定
+	if (mScene != mpScene->GetNextScene()) {
+		mScene = mpScene->GetNextScene();
+		delete mpScene;//今のシーン削除
+		//該当するシーンを生成
+		switch (mScene) {
+		case CScene::EGAME:
+			mpScene = new CSceneGame();
+			mpScene->Init();
+			break;
+		case CScene::ETITLE:
+			mpScene = new CSceneTitle();
+			mpScene->Init();
+			break;
+		}
+	}
 }

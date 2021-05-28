@@ -24,58 +24,13 @@
     <ClCompile Include="CSceneGame.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
-    <ClCompile Include="CBillBoard.cpp">
-      <Filter>ソース ファイル\Lib</Filter>
-    </ClCompile>
-    <ClCompile Include="CCamera.cpp">
-      <Filter>ソース ファイル\Lib</Filter>
-    </ClCompile>
-    <ClCompile Include="CCharacter.cpp">
-      <Filter>ソース ファイル\Lib</Filter>
-    </ClCompile>
-    <ClCompile Include="CCollider.cpp">
-      <Filter>ソース ファイル\Lib</Filter>
-    </ClCompile>
-    <ClCompile Include="CCollisionManager.cpp">
-      <Filter>ソース ファイル\Lib</Filter>
-    </ClCompile>
-    <ClCompile Include="CEffect.cpp">
-      <Filter>ソース ファイル\Lib</Filter>
-    </ClCompile>
     <ClCompile Include="CKey.cpp">
-      <Filter>ソース ファイル\Lib</Filter>
-    </ClCompile>
-    <ClCompile Include="CMaterial.cpp">
-      <Filter>ソース ファイル\Lib</Filter>
-    </ClCompile>
-    <ClCompile Include="CMatrix.cpp">
-      <Filter>ソース ファイル\Lib</Filter>
-    </ClCompile>
-    <ClCompile Include="CModel.cpp">
-      <Filter>ソース ファイル\Lib</Filter>
-    </ClCompile>
-    <ClCompile Include="CScene.cpp">
       <Filter>ソース ファイル\Lib</Filter>
     </ClCompile>
     <ClCompile Include="CSceneManager.cpp">
       <Filter>ソース ファイル\Lib</Filter>
     </ClCompile>
-    <ClCompile Include="CTaskManager.cpp">
-      <Filter>ソース ファイル\Lib</Filter>
-    </ClCompile>
     <ClCompile Include="CText.cpp">
-      <Filter>ソース ファイル\Lib</Filter>
-    </ClCompile>
-    <ClCompile Include="CTransform.cpp">
-      <Filter>ソース ファイル\Lib</Filter>
-    </ClCompile>
-    <ClCompile Include="CTriangle.cpp">
-      <Filter>ソース ファイル\Lib</Filter>
-    </ClCompile>
-    <ClCompile Include="CVector.cpp">
-      <Filter>ソース ファイル\Lib</Filter>
-    </ClCompile>
-    <ClCompile Include="CTexture.cpp">
       <Filter>ソース ファイル\Lib</Filter>
     </ClCompile>
     <ClCompile Include="CPlayer.cpp">
@@ -87,42 +42,18 @@
     <ClCompile Include="CEnemy.cpp">
       <Filter>ソース ファイル\Lib</Filter>
     </ClCompile>
+    <ClCompile Include="CSceneTitle.cpp">
+      <Filter>ソース ファイル\Lib</Filter>
+    </ClCompile>
+    <ClCompile Include="Updata.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="CSceneGame.h">
       <Filter>ソース ファイル</Filter>
     </ClInclude>
-    <ClInclude Include="main.h">
-      <Filter>ソース ファイル</Filter>
-    </ClInclude>
-    <ClInclude Include="CBillBoard.h">
-      <Filter>ソース ファイル\Lib</Filter>
-    </ClInclude>
-    <ClInclude Include="CCamera.h">
-      <Filter>ソース ファイル\Lib</Filter>
-    </ClInclude>
-    <ClInclude Include="CCharacter.h">
-      <Filter>ソース ファイル\Lib</Filter>
-    </ClInclude>
-    <ClInclude Include="CCollider.h">
-      <Filter>ソース ファイル\Lib</Filter>
-    </ClInclude>
-    <ClInclude Include="CCollisionManager.h">
-      <Filter>ソース ファイル\Lib</Filter>
-    </ClInclude>
-    <ClInclude Include="CEffect.h">
-      <Filter>ソース ファイル\Lib</Filter>
-    </ClInclude>
     <ClInclude Include="CKey.h">
-      <Filter>ソース ファイル\Lib</Filter>
-    </ClInclude>
-    <ClInclude Include="CMaterial.h">
-      <Filter>ソース ファイル\Lib</Filter>
-    </ClInclude>
-    <ClInclude Include="CMatrix.h">
-      <Filter>ソース ファイル\Lib</Filter>
-    </ClInclude>
-    <ClInclude Include="CModel.h">
       <Filter>ソース ファイル\Lib</Filter>
     </ClInclude>
     <ClInclude Include="CScene.h">
@@ -131,28 +62,10 @@
     <ClInclude Include="CSceneManager.h">
       <Filter>ソース ファイル\Lib</Filter>
     </ClInclude>
-    <ClInclude Include="CSound.h">
-      <Filter>ソース ファイル\Lib</Filter>
-    </ClInclude>
-    <ClInclude Include="CTask.h">
-      <Filter>ソース ファイル\Lib</Filter>
-    </ClInclude>
-    <ClInclude Include="CTaskManager.h">
-      <Filter>ソース ファイル\Lib</Filter>
-    </ClInclude>
     <ClInclude Include="CText.h">
       <Filter>ソース ファイル\Lib</Filter>
     </ClInclude>
     <ClInclude Include="CTexture.h">
-      <Filter>ソース ファイル\Lib</Filter>
-    </ClInclude>
-    <ClInclude Include="CTransform.h">
-      <Filter>ソース ファイル\Lib</Filter>
-    </ClInclude>
-    <ClInclude Include="CTriangle.h">
-      <Filter>ソース ファイル\Lib</Filter>
-    </ClInclude>
-    <ClInclude Include="CVector.h">
       <Filter>ソース ファイル\Lib</Filter>
     </ClInclude>
     <ClInclude Include="CMap.h">
@@ -166,6 +79,12 @@
     </ClInclude>
     <ClInclude Include="CEnemy.h">
       <Filter>ソース ファイル\Lib</Filter>
+    </ClInclude>
+    <ClInclude Include="CSceneTitle.h">
+      <Filter>ソース ファイル\Lib</Filter>
+    </ClInclude>
+    <ClInclude Include="Update.h">
+      <Filter>ソース ファイル</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

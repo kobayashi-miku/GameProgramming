@@ -1,3 +1,4 @@
+
 #include "CTexture.h"
 #include <stdio.h>	//ファイルの入力に使用
 #include <string.h>
@@ -91,7 +92,7 @@ void CTexture::Load(const char* filename) {
 	//テクスチャデータの作成
 	glGenTextures(1, &mId);
 	//mTexFile[filename] = *this;
-
+	
 	/* テクスチャユニット１に切り替える */
 //	glActiveTexture(GL_TEXTURE1);
 
@@ -170,7 +171,7 @@ void CTexture::DrawImage(float left, float right, float bottom, float top, int t
 		(float)(mHeader.height - ttop) / mHeader.height);
 
 	return;
-/*
+
 	//テクスチャを有効にする
 	glEnable(GL_TEXTURE_2D);
 	//アルファブレンドを有効にする
@@ -206,7 +207,7 @@ void CTexture::DrawImage(float left, float right, float bottom, float top, int t
 	glDisable(GL_BLEND);
 	//テクスチャを無効
 	glDisable(GL_TEXTURE_2D);
-*/
+
 }
 
 void CTexture::SetParts(int row, int col) {
@@ -226,7 +227,8 @@ void CTexture::DrawImage(float left, float right, float bottom, float top, int i
 
 //行数列数の設定
 //SetRowCol(行数, 列数)
-void CTexture::SetRowCol(int row , int col) {
+
+void CTexture::SetRowCol(int row, int col) {
 	mRow = row;
 	mCol = col;
 }
