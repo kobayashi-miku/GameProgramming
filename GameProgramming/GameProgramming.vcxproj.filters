@@ -24,6 +24,18 @@
     <ClCompile Include="CSceneGame.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
+<<<<<<< HEAD
+    <ClCompile Include="CKey.cpp">
+      <Filter>ソース ファイル\Lib</Filter>
+    </ClCompile>
+    <ClCompile Include="CSceneManager.cpp">
+      <Filter>ソース ファイル\Lib</Filter>
+    </ClCompile>
+    <ClCompile Include="CText.cpp">
+      <Filter>ソース ファイル\Lib</Filter>
+    </ClCompile>
+    <ClCompile Include="CPlayer.cpp">
+=======
     <ClCompile Include="CBillBoard.cpp">
       <Filter>ソース ファイル\Lib</Filter>
     </ClCompile>
@@ -100,6 +112,7 @@
       <Filter>ソース ファイル\Lib</Filter>
     </ClCompile>
     <ClCompile Include="CVector.cpp">
+>>>>>>> 2446cf0dce4570c7c681d5bcb45ea81e16039bda
       <Filter>ソース ファイル\Lib</Filter>
     </ClCompile>
     <ClCompile Include="CModelX.cpp">
@@ -108,11 +121,22 @@
     <ClCompile Include="CRes.cpp">
       <Filter>ソース ファイル\Lib</Filter>
     </ClCompile>
+    <ClCompile Include="CSceneTitle.cpp">
+      <Filter>ソース ファイル\Lib</Filter>
+    </ClCompile>
+    <ClCompile Include="Updata.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="CSceneGame.h">
       <Filter>ソース ファイル</Filter>
     </ClInclude>
+<<<<<<< HEAD
+    <ClInclude Include="CKey.h">
+      <Filter>ソース ファイル\Lib</Filter>
+    </ClInclude>
+=======
     <ClInclude Include="main.h">
       <Filter>ソース ファイル</Filter>
     </ClInclude>
@@ -167,19 +191,11 @@
     <ClInclude Include="CPlayer.h">
       <Filter>ソース ファイル\Lib</Filter>
     </ClInclude>
+>>>>>>> 2446cf0dce4570c7c681d5bcb45ea81e16039bda
     <ClInclude Include="CScene.h">
       <Filter>ソース ファイル\Lib</Filter>
     </ClInclude>
     <ClInclude Include="CSceneManager.h">
-      <Filter>ソース ファイル\Lib</Filter>
-    </ClInclude>
-    <ClInclude Include="CSound.h">
-      <Filter>ソース ファイル\Lib</Filter>
-    </ClInclude>
-    <ClInclude Include="CTask.h">
-      <Filter>ソース ファイル\Lib</Filter>
-    </ClInclude>
-    <ClInclude Include="CTaskManager.h">
       <Filter>ソース ファイル\Lib</Filter>
     </ClInclude>
     <ClInclude Include="CText.h">
@@ -188,6 +204,9 @@
     <ClInclude Include="CTexture.h">
       <Filter>ソース ファイル\Lib</Filter>
     </ClInclude>
+<<<<<<< HEAD
+    <ClInclude Include="CMap.h">
+=======
     <ClInclude Include="CTransform.h">
       <Filter>ソース ファイル\Lib</Filter>
     </ClInclude>
@@ -195,6 +214,7 @@
       <Filter>ソース ファイル\Lib</Filter>
     </ClInclude>
     <ClInclude Include="CUtil.h">
+>>>>>>> 2446cf0dce4570c7c681d5bcb45ea81e16039bda
       <Filter>ソース ファイル\Lib</Filter>
     </ClInclude>
     <ClInclude Include="CVector.h">
@@ -205,6 +225,12 @@
     </ClInclude>
     <ClInclude Include="CRes.h">
       <Filter>ソース ファイル\Lib</Filter>
+    </ClInclude>
+    <ClInclude Include="CSceneTitle.h">
+      <Filter>ソース ファイル\Lib</Filter>
+    </ClInclude>
+    <ClInclude Include="Update.h">
+      <Filter>ソース ファイル</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

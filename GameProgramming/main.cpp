@@ -2,8 +2,13 @@
 #include "glew.h"
 #include "glut.h"
 #include "GLFW/glfw3.h"
-#include "main.h"
-#include "CSceneManager.h"
+#include "Update.h"
+
+//#include "main.h"
+//#include "CSceneManager.h"
+
+#define WINDOW_WIDTH 800
+#define WINDOW_HEIGHT 600
 
 bool InitFlg = true;
 
@@ -22,11 +27,11 @@ void display() {
 	glLoadIdentity();
 
 	if (InitFlg) {
-		SceneManager.Init();
+//		Init();
 		InitFlg = false;
 	}
 	else {
-		SceneManager.Update();
+//		Update();
 	}
 
 }
@@ -41,8 +46,8 @@ void reshape(GLFWwindow* window, int width, int height) {
 	glViewport(0, 0, width, height);	//画面の描画エリアの指定
 	glMatrixMode(GL_PROJECTION);	//行列をプロジェクションモードへ変更
 	glLoadIdentity();				//行列を初期化
-//	gluOrtho2D(-width / 2, width / 2, -height / 2, height / 2);	//2Dの画面を設定
-	gluPerspective(75.0, (double)width / (double)height, 1.0, 10000.0);	//3Dの画面を設定
+	gluOrtho2D(-width / 2, width / 2, -height / 2, height / 2);	//2Dの画面を設定
+//	gluPerspective(75.0, (double)width / (double)height, 1.0, 10000.0);	//3Dの画面を設定
 
 	glMatrixMode(GL_MODELVIEW);		//行列をモデルビューモードへ変更
 	glLoadIdentity();				//行列を初期化
@@ -106,7 +111,7 @@ int main(void)
 	//glfwSwapInterval(1); 
 
 
-	glEnable(GL_DEPTH_TEST);	//3D必要 2D不要
+//	glEnable(GL_DEPTH_TEST);	//3D必要 2D不要
 	glEnable(GL_CULL_FACE);
 
 	// ウィンドウのサイズ変更時に呼び出す処理の登録
@@ -115,16 +120,16 @@ int main(void)
 
 	//ライトの設定（3D必要 2D不要）
 	//固定シェーダー用
-	glEnable(GL_LIGHTING);
-	glEnable(GL_LIGHT0);
-	float lightPosition[] = {0.0f, 100.0f, 100.0f, 1.0f};
-	glLightfv(GL_LIGHT0, GL_POSITION, lightPosition);
+//	glEnable(GL_LIGHTING);
+//	glEnable(GL_LIGHT0);
+//	float lightPosition[] = {0.0f, 100.0f, 100.0f, 1.0f};
+//	glLightfv(GL_LIGHT0, GL_POSITION, lightPosition);
 
-	glEnable(GL_NORMALIZE);
+//	glEnable(GL_NORMALIZE);
 
 	//メッシュシェーダー用
 //	CLight::getLight(0)->setDir(CVector3(0, -1, 1).GetNormalize());
-//	CLight::getLight(0)->setColor(CVector3(0.9f, 0.9f, 0.9f), CVector3(1.0f, 1.0f, 1.0f));
+//	CLight::getLight(0)->setColor(CVector3(0.9f, 0.9f, 0.9f), CVector3(1.0f, 1.0f, 1.0f));*/
 
 	/* Loop until the user closes the window */
 	while (!glfwWindowShouldClose(window))

@@ -7,7 +7,14 @@
 
 #include "CKey.h"
 
+<<<<<<< HEAD
+	//テキストフォントの読み込みと設定
+/*	CText::mFont.Load("FontG.tga");
+	CText::mFont.SetRowCol(1, 4096 / 64);*/
+}
+=======
 CMatrix Matrix;
+>>>>>>> 2446cf0dce4570c7c681d5bcb45ea81e16039bda
 
 CSceneGame::~CSceneGame() {
 
@@ -21,8 +28,16 @@ void CSceneGame::Init() {
 
 }
 
+<<<<<<< HEAD
+	glLoadIdentity();//行列（設定）を初期化
+	//2Dの投影範囲を設定
+	gluOrtho2D(-400, 400, -300, 300);
+	CText::DrawString("(-380,280)", -380, 280, 16, 16);
+	/*
+=======
 
 void CSceneGame::Update() {
+>>>>>>> 2446cf0dce4570c7c681d5bcb45ea81e16039bda
 	//カメラのパラメータを作成する
 	CVector e, c, u;//視点、注視点、上方向
 	//視点を求める
@@ -66,6 +81,6 @@ void CSceneGame::Update() {
 	//2Dの描画終了
 	CUtil::End2D();
 
-	return;
+	return;*/
 }
 

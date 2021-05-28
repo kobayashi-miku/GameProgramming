@@ -6,11 +6,17 @@ DrawChar
 ch:文字データ x:X座標 y:Y座標 w:幅 h:高さ
 */
 void CText::DrawChar(char ch, int x, int y, int w, int h) {
+<<<<<<< HEAD
+	int u = ch % 16 * 16;
+	int v = (ch - ' ') / 16 * 16;
+	mFont.DrawImage(x - w, x + w, y - h, y + h, u, u + 15, v + 15, v);
+=======
 	int u = (ch - ' ') % mFont.mCol * mFont.mHeader.width / mFont.mCol;
 	int v = (ch - ' ') / mFont.mCol * mFont.mHeader.height / mFont.mRow;
 	mFont.DrawImage(x - w, x + w, y - h, y + h,
 		u, u + mFont.mHeader.width / mFont.mCol,
 		v + mFont.mHeader.height / mFont.mRow, v);
+>>>>>>> 2446cf0dce4570c7c681d5bcb45ea81e16039bda
 }
 // s:文字列データ x:先頭文字X座標 y:先頭文字Y座標
 void CText::DrawString(const char *s, int x, int y, int w, int h) {

@@ -12,7 +12,9 @@ bool CKey::Push(char key) {
 	return (GetKeyState(key) & 0x8000) == 0x8000;
 }
 
-bool CKey::Flg[256];
+//1バイトの種類分のフラグ作成
+bool CKey::Flg[256];	//true:押し中　false:押されていない
+//keyが押された瞬間だけtrueを返す
 
 bool CKey::Once(char key) {
 	//キーが押されているか

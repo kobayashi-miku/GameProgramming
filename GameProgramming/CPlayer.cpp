@@ -13,9 +13,15 @@
 //
 #include "CEffect.h"
 
+<<<<<<< HEAD
+//extern：他のソースファイルの外部変数にアクセスする宣言
+//extern CTexture Texture;
+CTexture Texture;
+=======
 CPlayer *CPlayer::spThis = 0;
 
 #define FIRECOUNT 15	//発射間隔
+>>>>>>> 2446cf0dce4570c7c681d5bcb45ea81e16039bda
 
 CPlayer::CPlayer()
 : mLine(this, &mMatrix, CVector(0.0f, 0.0f, -14.0f), CVector(0.0f, 0.0f, 17.0f))
