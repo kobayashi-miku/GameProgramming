@@ -5,8 +5,7 @@
 #include "CUtil.h"
 #include"CRes.h"
 
-#include "glut.h"
-#include <Windows.h>
+#include "CKey.h"
 
 CMatrix Matrix;
 
@@ -32,28 +31,32 @@ void CSceneGame::Update() {
 	c = CVector();
 	//上方向を求める
 	u = CVector(0.0f, 1.0f, 0.0f);
-	//カメラの設定
-	Camera3D(e.mX, e.mY, e.mZ,
-		c.mX, c.mY, c.mZ, u.mX, u.mY, u.mZ);
+
+	//カメラクラスの設定
+	Camera.Set(e, c, u);
+	Camera.Render();
 
 	//X軸+回転
-	if (GetKeyState('K') & 0x8000){
+	if (CKey::Push('K')){
 		Matrix = Matrix * CMatrix().RotateX(1);
 	}
 	//Y軸+回転
-	if (GetKeyState('L') & 0x8000){
+	if (CKey::Push('L')){
 		Matrix = Matrix * CMatrix().RotateY(1);
+	}
+	//X軸-回転
+	if (CKey::Push('I')){
+		Matrix = Matrix * CMatrix().RotateX(-1);
+	}
+	//Y軸-回転
+	if (CKey::Push('J')){
+		Matrix = Matrix * CMatrix().RotateY(-1);
 	}
 
 	//行列設定
 	glMultMatrixf(Matrix.mF);
 	//モデル描画
 	CRes::sModelX.Render();
-
-	//カメラクラスの設定
-	Camera.Set(e, c, u);
-	Camera.Render();
-
 
 	//2D描画開始
 	CUtil::Start2D(0, 800, 0, 600);
