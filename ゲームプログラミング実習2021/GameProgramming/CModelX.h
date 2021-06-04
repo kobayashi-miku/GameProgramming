@@ -12,7 +12,9 @@
 #include <vector>     //vectorクラスのインクルード(動的配列)
 #include "CMatrix.h"  //マトリクスクラスのインクルード
 #include "CVector.h"
+#include "CMaterial.h"
 class CModelX;  //CModelXクラスの宣言
+class CMaterial; //クラスの宣言
 
 //CMeshクラスの定義
 class CMesh{
@@ -23,6 +25,10 @@ public:
 	int *mpVertexIndex;  //面を構成する頂点番号
 	int mNormalNum;      //法線数
 	CVector *mpNormal;   //法線データ
+	int mMaterialNum;    //マテリアル数
+	int mMaterialIndexNum; //マテリアル番号数(面数)
+	int *mpMaterialIndex;  //マテリアル番号
+	std::vector<CMaterial*> mMaterial;//マテリアルデータ
 
 	//コンストラクタ
 	CMesh()
@@ -32,12 +38,16 @@ public:
 		, mpVertexIndex(nullptr)
 		, mNormalNum(0)
 		, mpNormal(nullptr)
+		, mMaterialNum(0)
+		, mMaterialIndexNum(0)
+		, mpMaterialIndex(nullptr)
 	{}
 	//デストラクタ
 	~CMesh(){
 		SAFE_DELETE_ARRAY(mpVertex);
 		SAFE_DELETE_ARRAY(mpVertexIndex);
 		SAFE_DELETE_ARRAY(mpNormal);
+		SAFE_DELETE_ARRAY(mpMaterialIndex);
 	}
 	//読み込み処理
 	void Init(CModelX *model);

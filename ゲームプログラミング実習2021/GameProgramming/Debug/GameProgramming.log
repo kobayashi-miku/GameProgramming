@@ -1,0 +1,26 @@
+﻿2021/06/04 12:01:14 にビルドを開始しました。
+     1>ノード 2 上のプロジェクト "C:\Users\kobam\Desktop\Git まとめ\Git   プ実\GameProgramming\ゲームプログラミング実習2021\GameProgramming\GameProgramming.vcxproj" (Build ターゲット)。
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt CModelX.cpp CRes.cpp CSceneGame.cpp
+         CSceneGame.cpp
+     1>c:\users\kobam\desktop\git まとめ\git   プ実\gameprogramming\ゲームプログラミング実習2021\gameprogramming\cmaterial.h(35): error C2061: 構文エラー : 識別子 'CModelX'
+     1>c:\users\kobam\desktop\git まとめ\git   プ実\gameprogramming\ゲームプログラミング実習2021\gameprogramming\cmaterial.h(35): error C2535: 'CMaterial::CMaterial(void)' : メンバー関数は、既に定義または宣言されています。
+                 c:\users\kobam\desktop\git まとめ\git   プ実\gameprogramming\ゲームプログラミング実習2021\gameprogramming\cmaterial.h(21) : 'CMaterial::CMaterial' の宣言を確認してください。
+         CRes.cpp
+     1>c:\users\kobam\desktop\git まとめ\git   プ実\gameprogramming\ゲームプログラミング実習2021\gameprogramming\cmaterial.h(35): error C2061: 構文エラー : 識別子 'CModelX'
+     1>c:\users\kobam\desktop\git まとめ\git   プ実\gameprogramming\ゲームプログラミング実習2021\gameprogramming\cmaterial.h(35): error C2535: 'CMaterial::CMaterial(void)' : メンバー関数は、既に定義または宣言されています。
+                 c:\users\kobam\desktop\git まとめ\git   プ実\gameprogramming\ゲームプログラミング実習2021\gameprogramming\cmaterial.h(21) : 'CMaterial::CMaterial' の宣言を確認してください。
+         CModelX.cpp
+     1>c:\users\kobam\desktop\git まとめ\git   プ実\gameprogramming\ゲームプログラミング実習2021\gameprogramming\cmaterial.h(35): error C2061: 構文エラー : 識別子 'CModelX'
+     1>c:\users\kobam\desktop\git まとめ\git   プ実\gameprogramming\ゲームプログラミング実習2021\gameprogramming\cmaterial.h(35): error C2535: 'CMaterial::CMaterial(void)' : メンバー関数は、既に定義または宣言されています。
+                 c:\users\kobam\desktop\git まとめ\git   プ実\gameprogramming\ゲームプログラミング実習2021\gameprogramming\cmaterial.h(21) : 'CMaterial::CMaterial' の宣言を確認してください。
+     1>c:\users\kobam\desktop\git まとめ\git   プ実\gameprogramming\ゲームプログラミング実習2021\gameprogramming\cmodelx.cpp(258): error C2664: 'CMaterial::CMaterial(const CMaterial &)' : 引数 1 を 'CModelX *' から 'const CMaterial &' へ変換できません。
+                 理由: 'CModelX *' から 'const CMaterial' へは変換できません。
+                 コンストラクターはソース型を持てません、またはコンストラクターのオーバーロードの解決があいまいです。
+     1>c:\users\kobam\desktop\git まとめ\git   プ実\gameprogramming\ゲームプログラミング実習2021\gameprogramming\cmodelx.cpp(318): warning C4018: '<' : signed と unsigned の数値を比較しようとしました。
+         コードを生成中...
+     1>プロジェクト "C:\Users\kobam\Desktop\Git まとめ\Git   プ実\GameProgramming\ゲームプログラミング実習2021\GameProgramming\GameProgramming.vcxproj" (Build ターゲット) のビルドが終了しました -- 失敗。
+
+ビルドに失敗しました。
+
+経過時間 00:00:01.23
