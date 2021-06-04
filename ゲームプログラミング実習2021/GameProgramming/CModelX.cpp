@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include "CModelX.h"
 #include <string.h>     //文字列関数のインクルード
-
+#include "CMaterial.h"
 
 void CModelX::Load(char *file){
 	//
