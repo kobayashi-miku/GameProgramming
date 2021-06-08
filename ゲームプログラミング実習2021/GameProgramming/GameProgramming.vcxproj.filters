@@ -102,10 +102,10 @@
     <ClCompile Include="CVector.cpp">
       <Filter>ソース ファイル\Lib</Filter>
     </ClCompile>
-    <ClCompile Include="CModelX.cpp">
-      <Filter>ソース ファイル</Filter>
-    </ClCompile>
     <ClCompile Include="CRes.cpp">
+      <Filter>ソース ファイル\Lib</Filter>
+    </ClCompile>
+    <ClCompile Include="CModelX.cpp">
       <Filter>ソース ファイル\Lib</Filter>
     </ClCompile>
   </ItemGroup>
